@@ -29,6 +29,24 @@
             border-bottom: 1px solid #dee2e6;
         }
     }
+
+    &__photo {
+        width: 260px;
+        height: 315px;
+    }
+
+    &__price {
+        font-size: 17px;
+        color: #444444;
+    }
+
+    &__btn {
+        width: 260px;
+        height: 52px;
+
+        color: #444444;
+        border: 2px solid #444444;
+    }
 }
 
 
@@ -39,6 +57,11 @@
         &__text {
             width: 300px;
         }
+        
+        &__photo {
+            width: 333px;
+            height: 404px;
+        }
     }
 
 }
@@ -47,6 +70,11 @@
     .product {
         &__wrapper {
             padding-top: 70px;
+        }
+
+        &__photo {
+            width: 525px;
+            height: 636px;
         }
     }
 }

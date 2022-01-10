@@ -74,9 +74,9 @@
                     <p class="product__subtitle col-md-3 col-lg-2 font-weight-bold text-md-center m-0 p-0">Товар <br class="d-none d-md-block"> недели</p>
                 </div>
                 <div class="row">
-                    <div class="product__descr col-12 col-md-6">
+                    <div class="product__descr col-12">
                         <p class="product__text p-0 m-0 mb-3">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-                        <table class="table product__table">
+                        <table class="table product__table mb-4">
                             <tbody>
                                 <tr>
                                     <td>Цвет:</td>
@@ -92,11 +92,14 @@
                                 </tr>
                             </tbody>
                         </table>
-                        
+                        <picture class="order-md-3">
+                            <source media="(min-width: 992px)" srcset="/img/triple-set-desktop.png">
+                            <source media="(min-width: 768px)" srcset="/img/triple-set-tablet.png">
+                            <img class="product__photo " src="/img/triple-set-mobile.png" alt="Товар">
+                        </picture>
+                        <p class="product__price p-0 my-3 text-center font-weight-bold">Цена: 990 руб.</p>
+                        <button class="product__btn btn m-0 font-weight-bold text-uppercase">Заказать</button>
                     </div>
-                </div>
-                <div class="product__photo col-12 col-md-6">
-
                 </div>
             </div>
         </section>
