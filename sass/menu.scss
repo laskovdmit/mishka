@@ -1,0 +1,215 @@
+.menu {
+    border-bottom: 1px solid #ececec;
+
+    &__wrapper {
+        position: relative;
+        background-color: #fff;
+        padding: 0;
+    }
+
+    &__burger {
+        border: none;
+        background-color: inherit;
+        padding: 0;
+    
+        position: absolute;
+        top: 28px;
+        right: 15px;
+    
+        cursor: pointer;
+        
+        width: 24px;
+        height: 24px;
+
+        &::after {
+            content: "";
+        
+            position: absolute;
+            top: 10px;
+            left: 0;
+        
+            width: 24px;
+            height: 3px;
+            background-color: #000;
+        
+            box-shadow: 0 8px #000, 0 -8px #000;
+        }
+    }
+
+    &__logo {
+        width: 86px;
+        height: 35px;
+    }
+
+    &__img {
+        height: 80px;
+        border-bottom: 1px solid #ececec;
+    }
+
+    &__main .nav-item {
+        height: 80px;
+        border-bottom: 1px solid #ececec;
+    }
+
+    &__user .nav-item {
+        height: 80px;
+        border-bottom: 1px solid #ececec;
+    }
+}
+
+.nav {
+    & a {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-item {
+        &--border {
+            border-right: 1px solid #ececec;
+        }
+
+        
+    }
+
+    &-link {
+        color: #000;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 24px;
+
+        display: inline;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    
+    .menu {
+        &__wrapper {
+            min-height: 90px;
+        }
+
+        &__logo {
+            width: 112px;
+            height: 46px;
+        }
+
+        &__delivery {
+            position: absolute;
+
+            top: calc(100% + 28px);
+            right: 0;
+        }
+
+        &__main {
+            position: absolute;
+
+            top: calc(100% + 20px);
+            right: left;
+            
+            & .nav-link {
+                font-size: 15px;
+            }
+
+            & .nav-item {
+                height: auto;
+                border-bottom: none;
+            }
+        }
+        
+        &__img {
+            height: auto;
+            border-bottom: none;
+        }
+
+        &__user .nav-item {
+            height: auto;
+            border-bottom: none;
+        }
+    }
+
+    .nav {
+        &-item {
+
+            &--search {
+                border-right: 1px solid #ececec;
+                border-left: 1px solid #ececec;
+    
+                & .nav-link {
+                    position: relative;
+
+                    &::before {
+                        content: "";
+            
+                        position: absolute;
+                        top: calc(50% - 9px);
+                        left: calc(50% - 9px);
+            
+                        width: 18px;
+                        height: 18px;
+                        background-image: url("/img/search.png");
+                    }
+                }
+
+            }
+            
+            &--cart {
+                padding: 0;
+    
+                & .nav-link {
+                    position: relative;
+                    padding-left: 80px;
+
+                    &::before {
+                        content: "";
+            
+                        position: absolute;
+                        top: calc(50% - 9px);
+                        left: 35px;
+            
+                        width: 21px;
+                        height: 18px;
+                        background-image: url("/img/cart.png");
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media (min-width: $desktop-width) {
+    .menu {
+        &__logo  {
+            width: 149px;
+            height: 72px;
+        }
+
+        &__main {
+            position: static;
+
+            & .nav-link {
+                font-size: 17px;
+            }
+
+            & li:first-of-type {
+                border-right: 1px solid #ececec;
+            }
+        }
+
+        &__second {
+            position: absolute;
+
+            top: calc(100% + 20px);
+            left: 0;
+
+            & .nav-link {
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+    }
+}
