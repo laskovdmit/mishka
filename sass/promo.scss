@@ -13,10 +13,12 @@
         position: absolute;
         top: 75px;
         left: 50%;
-
         transform: translate(-50%, 0);
 
         width: 260px;
+        margin: 0;
+
+        text-align: center;
     }
 
     &__img {
@@ -32,14 +34,19 @@
 
     &__type {
         position: absolute;
-
         top: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
     }
 
     &__interior, &__toys {
         color: #fff;
         font-size: 19px;
         line-height: 24px;
+        font-weight: bold;
         
         padding: 30px;
         position: relative;
@@ -86,10 +93,12 @@
     .promo {
 
         &__zigzag {
+            width: 100%;
             height: 22px;
 
             position: absolute;
             bottom: 0;
+            transform: translate(0, 50%);
 
             background-image: url('/img/zigzag-fill-desktop.png');
             background-repeat: repeat-x;
@@ -98,7 +107,7 @@
         }
 
         &__wrapper {
-            min-height: 734px;
+            min-height: 746px;
             overflow: hidden;
         }
 
@@ -110,9 +119,13 @@
         &__img {
             width: 768px;
             height: 746px;
+
+            top: 0;
         }
 
         &__type {
+            flex-direction: row;
+
             top: auto;
             bottom: 0;
             left: calc(50%);
@@ -122,6 +135,8 @@
         }
         
         &__interior, &__toys {
+            width: 100%;
+
             font-size: 20px;
             line-height: 30px;
         }
@@ -133,7 +148,6 @@
 
         &__zigzag {
             height: 34px;
-            bottom: -10px;
         }
 
         &__header {
@@ -147,21 +161,8 @@
         }
 
         &__type {
-            max-width: 850px;
-        }
-    }
-
-}
-
-
-@media (min-width: 1200px) {
-    .promo {
-        &__type {
             max-width: 1050px;
         }
-
-        &__zigzag {
-            bottom: -17px;
-        }
     }
+
 }

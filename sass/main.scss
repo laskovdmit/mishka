@@ -1,26 +1,26 @@
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/opensans.woff') format('woff');
-    src: url('../fonts/opensans.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Open Sans';
+//     src: url('../fonts/opensans.woff') format('woff');
+//     src: url('../fonts/opensans.woff2') format('woff2');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/opensansbold.woff') format('woff');
-    src: url('../fonts/opensansbold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Open Sans';
+//     src: url('../fonts/opensansbold.woff') format('woff');
+//     src: url('../fonts/opensansbold.woff2') format('woff2');
+//     font-weight: bold;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/opensanslight.woff') format('woff');
-    src: url('../fonts/opensanslight.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Open Sans';
+//     src: url('../fonts/opensanslight.woff') format('woff');
+//     src: url('../fonts/opensanslight.woff2') format('woff2');
+//     font-weight: 300;
+//     font-style: normal;
+// }
 
 body {
     position: relative;
@@ -31,6 +31,36 @@ body {
     line-height: 24px;
     color: #000;
     background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.btn {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+
+    font-family: 'Open Sans';
+    padding: 0;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
 }
 
 header, main, footer {
@@ -44,12 +74,8 @@ ul {
 }
 
 .title {
-    font-size: 27px;
+    font-size: 25px;
     line-height: 30px;
-}
-
-.wrapper {
-    padding: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,21 +83,11 @@ ul {
         font-size: 43px;
         line-height: 50px;
     }
-
-    .wrapper {
-        padding: 50px;
-    }
 }
 
 @media (min-width: $desktop-width) {
     .title {
         font-size: 53px;
         line-height: 57px;
-    }
-
-    .wrapper {
-        padding: 0;
-        width: 1050px;
-        margin: auto;
     }
 }

@@ -1,33 +1,71 @@
 .product {
     padding-top: 216px;
 
+    &__wrapper {
+        padding: 30px;
+        width: 320px;
+
+        box-sizing: border-box;
+    }
+
+    &__header {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        max-width: 260px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
     &__subtitle {
+        max-width: 260px;
+        margin: 0 auto;
+
         text-transform: uppercase;
+        font-weight: bold;
         font-size: 17px;
         line-height: 17px;
         color: #63d1bb;
+
+        & br {
+            display: none;
+        }
+    }
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        max-width: 260px;
     }
 
     &__text {
         color: $text-color;
+        font-size: 15px;
+
+        margin: 0;
+        margin-bottom: 15px;
     }
 
     &__table {
+        font-size: 15px;
         color: $text-color;
-        max-width: 290px;
 
-        & td {
-            padding-left: 0;
-            padding-right: 0;
-        }
+        width: 100%;
+        margin-bottom: 30px;
 
-        & tr:first-of-type td{
-            border-top: none;
-        }
-
-        & tr:last-of-type td{
+        & tr td {
             border-bottom: 1px solid #dee2e6;
+            padding-top: 7px;
+            padding-bottom: 7px;
         }
+    }
+    
+    &__photowrap {
+        display: flex;
+        justify-content: center;
     }
 
     &__photo {
@@ -37,12 +75,20 @@
 
     &__price {
         font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+
         color: #444444;
     }
 
     &__btn {
         width: 260px;
         height: 52px;
+        margin: 0 auto;
+
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
 
         color: #444444;
         border: 2px solid #444444;
@@ -54,13 +100,70 @@
     .product {
         padding-top: 0;
 
+        &__wrapper {
+            padding: 50px;
+            width: 768px;
+        }
+
+        &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            margin-bottom: 55px;
+        }
+
+        &__title {
+            max-width: 100%;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        
+        &__subtitle {
+            width: 175px;
+            margin: 0;
+            text-align: center;
+
+            & br {
+                display: block;
+            }
+        }
+
+        &__descr {
+            max-width: 100%;
+            position: relative;
+            padding-right: 374px;
+        }
+
         &__text {
-            width: 300px;
+            margin-bottom: 35px;
+
+            font-size: 17px;
+            line-height: 30px;
+        }
+        
+        &__table {
+            margin-bottom: 40px;
+        }
+        
+        &__price {
+            font-size: 20px;
+        }
+
+        &__photowrap {
+            position: absolute;
+
+            top: 0;
+            right: 0;
         }
         
         &__photo {
             width: 333px;
             height: 404px;
+        }
+        
+        &__btn {
+            width: 292px;
         }
     }
 
@@ -69,9 +172,41 @@
 @media (min-width: $desktop-width) {
     .product {
         &__wrapper {
-            padding-top: 70px;
+            padding-top: 135px;
+            width: 1150px;
         }
 
+        &__header {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        &__title {
+            margin: 0;
+        }
+
+        &__subtitle {
+            margin: 0;
+        }
+        
+        &__descr {
+            padding-left: 175px;
+            padding-right: 580px;
+        }
+
+        &__text {
+            margin-bottom: 55px;
+        }
+        
+        &__table {
+            margin-bottom: 85px;
+        }
+
+        &__photowrap {
+            top: -165px;
+            z-index: -1;
+        }
+        
         &__photo {
             width: 525px;
             height: 636px;
