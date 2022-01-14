@@ -3,6 +3,7 @@
 
     &__item {
         height: 80px;
+        box-sizing: border-box;
         border-bottom: 1px solid #ececec;
     }
 
@@ -89,6 +90,7 @@
 
                 & p {
                     width: 190px;
+                    text-align: right;
 
                     &::before {
                         left: -53px;

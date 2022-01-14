@@ -1,0 +1,182 @@
+.review {
+    position: relative;
+
+    &__wrapper {
+        width: 260px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+
+        position: relative;
+    }
+
+    &__img {
+        display: none;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 30px;
+        color: #444444;
+        
+        margin-bottom: 30px;
+    }
+
+    &__persone {
+        margin: 0;
+        margin-bottom: 5px;
+
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    &__nickname {
+        font-size: 17px;
+        line-height: 30px;
+        color: #444444;
+
+        margin-bottom: 30px;
+    }
+
+    &__arrows {
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 40px;
+    }
+
+    &__prev, &__next {
+        position: relative;
+        cursor: pointer;
+
+        width: 130px;
+        height: 52px;
+
+        border: 1px solid #ececec;
+        background-color: inherit;
+    }
+
+    &__prev::after {
+        content: "";
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        width: 50px;
+        height: 26px;
+
+        background-image: url('/img/huge-arrow-left.png');
+    }
+
+    &__next::after {
+        content: "";
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        width: 50px;
+        height: 26px;
+
+        background-image: url('/img/huge-arrow-right.png');
+    }
+
+    &__btn {
+        width: 260px;
+        height: 52px;
+
+        border: 2px solid #444444;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .review {
+        &__wrapper {
+            width: auto;
+            max-width: 668px;
+
+            padding-top: 80px;
+            padding-bottom: 125px;
+        }
+        
+        &__img {
+            display: block;
+            position: absolute;
+            z-index: -1;
+
+            top:0;
+            left: 0;
+        }
+        
+        &__title {
+            margin-bottom: 55px;
+        }
+
+        &__text {
+            font-size: 17px;
+
+            margin-bottom: 45px;
+        }
+        
+        &__nickname {
+            margin-bottom: 0;
+        }
+
+        &__arrows {
+            position: absolute;
+            right: 50px;
+            bottom: 130px;
+
+            margin-bottom: 0;
+        }
+
+        &__prev, &__next {
+            width: 80px;
+            border: none;
+        }
+
+        &__btn {
+            width: 175px;
+            
+            position: absolute;
+            right: 50px;
+            top: 85px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .review {
+        &__wrapper {
+            max-width: 875px;
+            padding-top: 75px;
+            padding-left: 225px;
+            padding-bottom: 175px;
+        }
+        
+        &__title {
+            margin-bottom: 50px;
+        }
+
+        &__text {
+            width: 770px;
+            margin-bottom: 35px;
+        }
+        
+        &__img {
+            left: 50px;
+        }
+
+        &__arrows {
+            bottom: 180px;
+        }
+    }
+}

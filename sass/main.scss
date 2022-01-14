@@ -37,6 +37,18 @@ p {
 
     font-family: 'Open Sans';
     padding: 0;
+
+    &--outline {
+        width: 260px;
+        height: 52px;
+
+        border: 2px solid #444444;
+
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #444444;
+    }
 }
 
 .container {
@@ -56,8 +68,24 @@ ul {
 }
 
 .title {
-    font-size: 27px;
+    font-size: 26px;
     line-height: 30px;
+
+    margin: 0;
+}
+
+.zigzag {
+    width: 100%;
+    height: 6px;
+    max-width: 320px;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    background-image: url('/img/zigzag-line-desktop.png');
+    background-size: contain;
 }
 
 @media (min-width: $tablet-width) {
@@ -69,11 +97,21 @@ ul {
     .container {
         padding: 0 50px;
     }
+
+    .zigzag {
+        max-width: 768px;
+        height: 15px;
+    }
 }
 
 @media (min-width: $desktop-width) {
     .title {
         font-size: 53px;
         line-height: 57px;
+    }
+
+    .zigzag {
+        max-width: 1050px;
+        height: 23px;
     }
 }

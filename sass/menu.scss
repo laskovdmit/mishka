@@ -4,6 +4,7 @@
 
         display: flex;
         flex-wrap: wrap;
+        box-sizing: border-box;
 
         background-color: #fff;
         padding: 0;
@@ -12,6 +13,7 @@
     &__img {
         width: 100%;
         height: 80px;
+        box-sizing: border-box;
 
         display: flex;
         justify-content: center;
@@ -59,11 +61,11 @@
 
 @media (min-width: $tablet-width) {
     .menu {
+        border-bottom: 1px solid #ececec;
+
         &__wrapper {
             padding: 0 50px;
             justify-content: space-between;
-
-            border-bottom: 1px solid #ececec;
         }
 
         &__img {
@@ -120,6 +122,10 @@
 
 @media (min-width: $desktop-width) {
     .menu {
+        &__wrapper {
+            padding: 0;
+        }
+
         &__img {
             order: 1;
         }
@@ -160,7 +166,7 @@
             position: absolute;
 
             top: calc(100% + 24px);
-            left: 88px;
+            left: 38px;
 
             & .nav__item {
                 height: auto;
@@ -171,6 +177,10 @@
                     margin-right: 68px;
                 }
             }
+        }
+
+        &__delivery {
+            right: 0;
         }
     }
 }

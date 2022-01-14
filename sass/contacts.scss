@@ -1,0 +1,181 @@
+.contacts {
+    &__wrapper {
+        width: 260px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 30px;
+
+        margin: 0;
+        margin-bottom: 35px;
+    }
+
+    &__info {
+        margin-bottom: 30px;
+    }
+
+    &__email {
+        margin-bottom: 30px;
+    }
+
+    &__email, &__address {
+        display: flex;
+
+        font-size: 15px;
+        line-height: 30px;
+        color: #444444;
+    }
+
+    &__subtitle {
+        margin-right: 30px;
+    }
+
+    &__line {
+        position: relative;
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            top: 28px;
+            left: 2px;
+
+            width: 177px;
+            height: 1px;
+
+            background-color: #62d1ba;
+        }
+    }
+
+    &__map {
+        width: calc(100% + 60px);
+        height: 457px;
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-bottom: 40px;
+
+        background-color: rgb(228, 228, 228);
+
+        position: relative;
+    }
+
+    &__marker {
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .contacts {
+        &__wrapper {
+            width: auto;
+            max-width: 668px;
+            padding-top: 70px;
+            padding-bottom: 60px;
+
+            position: relative;
+        }
+
+        &__flag {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+
+            width: 47px;
+            height: 81px;
+
+            background-image: url('/img/flag.png');
+            background-repeat: no-repeat;
+        }
+
+        &__title {
+            font-size: 43px;
+            line-height: 50px;
+        }
+
+        &__info {
+            display: flex;
+
+            margin-bottom: 60px;
+        }
+        
+        &__email, &__address {
+            font-size: 17px;
+            flex-basis: 50%;
+
+            margin-bottom: 0;
+        }
+
+        &__line::after {
+            width: 200px;
+        }
+
+        &__map {
+            width: calc(100% + 100px);
+
+            margin-left: -50px;
+            margin-right: -50px;
+            margin-bottom: 55px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .contacts {
+        &__wrapper {
+            max-width: 350px;
+            padding-top: 155px;
+            padding-left: 225px;
+            padding-right: 575px;
+            padding-bottom: 105px;
+        }
+
+        &__flag {
+            top: 145px;
+            left: 115px;
+            right: auto;
+        }
+
+        &__title {
+            font-size: 53px;
+            line-height: 57px;
+        }
+
+        &__info {
+            flex-direction: column;
+
+            margin-bottom: 80px;
+        }
+
+        &__email {
+            margin-bottom: 40px;
+        }
+
+        &__map {
+            position: absolute;
+            top: 85px;
+            right: 50px;
+
+            margin: 0;
+
+            width: 525px;
+            height: 455px;
+        }
+
+        &__btn {
+            justify-content: flex-start;
+        }
+    }
+}

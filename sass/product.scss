@@ -1,17 +1,18 @@
 .product {
     padding-top: 216px;
+    position: relative;
 
     &__wrapper {
         padding-top: 30px;
-        width: 340px;
+        padding-bottom: 40px;
+        max-width: 260px;
     }
 
     &__header {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     &__title {
-        margin: 0;
         margin-bottom: 5px;
     }
 
@@ -47,7 +48,7 @@
         color: $text-color;
 
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
 
         & tr td {
             border-bottom: 1px solid #dee2e6;
@@ -74,19 +75,6 @@
 
         padding: 20px 0;
     }
-
-    &__btn {
-        width: 260px;
-        height: 52px;
-        margin: 0 auto;
-
-        font-size: 17px;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #444444;
-
-        border: 2px solid #444444;
-    }
 }
 
 @media (min-width: $tablet-width) {
@@ -95,7 +83,8 @@
 
         &__wrapper {
             padding-top: 50px;
-            width: 668px;
+            padding-bottom: 60px;
+            max-width: 668px;
         }
 
         &__header {
@@ -162,8 +151,9 @@
 @media (min-width: $desktop-width) {
     .product {
         &__wrapper {
-            padding-top: 135px;
-            width: 1050px;
+            padding-top: 130px;
+            padding-bottom: 85px;
+            max-width: 1050px;
         }
 
         &__header {
@@ -174,7 +164,6 @@
         &__descr {
             padding-left: 175px;
             padding-right: 580px;
-            margin-bottom: 85px;
         }
 
         &__text {
@@ -186,7 +175,7 @@
         }
 
         &__photowrap {
-            top: -165px;
+            top: -160px;
             z-index: -1;
         }
         
