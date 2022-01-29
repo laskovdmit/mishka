@@ -68,7 +68,7 @@
         &__wrapper {
             width: auto;
             max-width: 668px;
-            padding-top: 60px;
+            padding-top: 65px;
             padding-bottom: 20px;
         }
 
@@ -83,7 +83,7 @@
 
         &__item {
             padding-top: 55px;
-            margin-bottom: 55px;
+            margin-bottom: 45px;
 
             flex-basis: 50%;
         }
@@ -98,8 +98,8 @@
 @media (min-width: $desktop-width) {
     .about {
         &__wrapper {
-            padding-top: 70px;
-            padding-bottom: 35px;
+            padding-top: 80px;
+            padding-bottom: 40px;
             max-width: 700px;
         }
     }

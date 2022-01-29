@@ -59,7 +59,7 @@
         background-color: inherit;
     }
 
-    &__prev::after {
+    &__prev::after, &__next::after {
         content: "";
 
         position: absolute;
@@ -70,22 +70,14 @@
 
         width: 50px;
         height: 26px;
+    
+    }
 
+    &__prev::after {
         background-image: url('/img/huge-arrow-left.png');
     }
 
     &__next::after {
-        content: "";
-
-        position: absolute;
-        top: 50%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
-
-        width: 50px;
-        height: 26px;
-
         background-image: url('/img/huge-arrow-right.png');
     }
 

@@ -123,7 +123,10 @@
 @media (min-width: $desktop-width) {
     .menu {
         &__wrapper {
-            padding: 0;
+            width: 1150px;
+            margin: auto;
+            box-sizing: border-box;
+            padding-left: 0;
         }
 
         &__img {
@@ -138,6 +141,7 @@
         &__main {
             position: static;
             order: 0;
+            flex-grow: 1;
 
             & .nav__item {
                 width: 225px;
@@ -166,7 +170,7 @@
             position: absolute;
 
             top: calc(100% + 24px);
-            left: 38px;
+            left: 37px;
 
             & .nav__item {
                 height: auto;
@@ -177,10 +181,6 @@
                     margin-right: 68px;
                 }
             }
-        }
-
-        &__delivery {
-            right: 0;
         }
     }
 }

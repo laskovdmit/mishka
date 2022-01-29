@@ -1,0 +1,161 @@
+.production {
+    border: 1px solid #ececec;
+    position: relative;
+
+    &__wrapper {
+        position: absolute;
+        top: 101px;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 100px;
+            height: 76px;
+
+            background-image: url('/img/play.png');
+        }
+    }
+
+    &__video {
+        display: block;
+    }
+
+    &__info {
+        padding-bottom: 35px;
+    }
+
+    &__header {
+        padding-top: 28px;
+        padding-right: 28px;
+        padding-bottom: 25px;
+        padding-left: 90px;
+        margin-bottom: 150px;
+
+        position: relative;
+
+        &::before {
+            content: "";
+
+            width: 32px;
+            height: 22px;
+
+            position: absolute;
+            top: 50%;
+            left: 35px;
+            transform: translate(0, -50%);
+
+            background-image: url('/img/video.png');
+        }
+    }
+
+    &__title {
+        margin: 0;
+
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    &__text {
+        font-size: 13px;
+        color: #444444;
+
+        padding: 30px;
+        padding-bottom: 20px;
+    }
+
+    &__btnwrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn {
+        width: 192px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .production {
+        display: flex;
+        flex-direction: column;
+
+        &__wrapper {
+            position: relative;
+            top: 0;
+        }
+
+        &__header {
+            padding-top: 35px;
+            padding-bottom: 35px;
+            padding-left: 95px;
+            margin-bottom: 0;
+
+            &::before {
+                left: 40px;
+            }
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__info {
+            padding-bottom: 45px;
+        }
+
+        &__text {
+            padding-top: 0;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 35px;
+
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+        &__btnwrap {
+            padding: 0 40px;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .production {
+        flex-direction: row;
+
+        &__header {
+            padding: 0;
+
+            &::before {
+                top: -35px;
+                left: 0;
+            }
+        }
+
+        &__info {
+            padding-top: 95px;
+            padding-left: 80px;
+            padding-right: 58px;
+            padding-bottom: 60px;
+        }
+
+        &__text {
+            padding: 0;
+            padding-top: 35px;
+            padding-bottom: 45px;
+        }
+
+        &__btnwrap {
+            padding: 0;
+        }
+    }
+}

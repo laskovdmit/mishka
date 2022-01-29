@@ -1,6 +1,6 @@
 .product {
-    padding-top: 216px;
     position: relative;
+    padding-top: 216px;
 
     &__wrapper {
         padding-top: 30px;
@@ -9,7 +9,7 @@
     }
 
     &__header {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     &__title {
@@ -48,18 +48,13 @@
         color: $text-color;
 
         width: 100%;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
 
         & tr td {
             border-bottom: 1px solid #dee2e6;
             padding-top: 7px;
             padding-bottom: 7px;
         }
-    }
-    
-    &__photowrap {
-        display: flex;
-        justify-content: center;
     }
 
     &__photo {
@@ -96,7 +91,6 @@
         }
 
         &__title {
-            max-width: 100%;
             margin-bottom: 0;
         }
         
@@ -151,7 +145,7 @@
 @media (min-width: $desktop-width) {
     .product {
         &__wrapper {
-            padding-top: 130px;
+            padding-top: 135px;
             padding-bottom: 85px;
             max-width: 1050px;
         }
@@ -175,7 +169,7 @@
         }
 
         &__photowrap {
-            top: -160px;
+            top: -165px;
             z-index: -1;
         }
         

@@ -2,9 +2,12 @@
 @import "main.scss";
 @import "nav.scss";
 @import "menu.scss";
-@import "promo.scss";
-@import "product.scss";
-@import "about.scss";
-@import "review.scss";
-@import "contacts.scss";
 @import "footer.scss";
+@import "Index/promo.scss";
+@import "Index/product.scss";
+@import "Index/about.scss";
+@import "Index/review.scss";
+@import "Index/contacts.scss";
+@import "Catalog/products.scss";
+@import "Catalog/production.scss";
+@import "Form/form.scss";
