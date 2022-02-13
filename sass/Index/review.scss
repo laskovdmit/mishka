@@ -81,6 +81,14 @@
         background-image: url('/img/huge-arrow-right.png');
     }
 
+    &__prev:hover::after, &__next:hover::after {
+        opacity: 0.6;
+    }
+
+    &__prev:active::after, &__next:active::after {
+        opacity: 0.3;
+    }
+
     &__btn {
         width: 260px;
         height: 52px;

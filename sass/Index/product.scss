@@ -1,6 +1,5 @@
 .product {
     position: relative;
-    padding-top: 216px;
 
     &__wrapper {
         padding-top: 30px;
@@ -74,8 +73,6 @@
 
 @media (min-width: $tablet-width) {
     .product {
-        padding-top: 0;
-
         &__wrapper {
             padding-top: 50px;
             padding-bottom: 60px;

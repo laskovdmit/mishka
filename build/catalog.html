@@ -13,7 +13,7 @@
         <nav class="menu">
             <div class="menu__wrapper container">
                 <div class="menu__img">
-                    <a href="index.html">
+                    <a class="menu__link-img" href="index.html">
                         <picture>
                             <source media="(min-width: 1265px)" srcset="/img/mishka-logo-desktop.png">
                             <source media="(min-width: 785px)" srcset="/img/mishka-logo-tablet.png">
@@ -130,26 +130,36 @@
     </main>
     <footer class="footer">
         <div class="footer__wrapper container">
-            <div class="footer__logo">
-                <img class="footer__img" src="/img/logo-footer.png" width="102" height="34" alt="Лого">
-            </div>
+            <a href="index.html" class="footer__logo"></a>
             <div class="footer__socials">
-                <a href="#">
-                    <img class="footer__inst" src="/img/insta.png" alt="Instagram" width="22" height="21">
-                </a>
-                <a href="#">
-                    <img class="footer__fb" src="/img/fb.png" alt="Facebook" width="15" height="29">
-                </a>
-                <a href="#">
-                    <img class="footer__twitter" src="/img/twitter.png" alt="Twitter" width="24" height="20">
-                </a>
+                <a href="#" class="footer__inst"></a>
+                <a href="#" class="footer__fb"></a>
+                <a href="#" class="footer__twitter"></a>
             </div>
-            <div class="footer__author">
+            <a href="#" class="footer__author">
                 <p class="footer__text">Разработано</p>
-                <img src="/img/htmlacademy.png" alt="Author" width="27" height="34">
-            </div>
+                <div class="footer__copy-img"></div>
+            </a>
         </div>
     </footer>
+
+    <section class="modal modal--hide">
+        <div class="modal__wrapper">
+            <div class="modal__content">
+                <div class="modal__title">Добавить <br class="modal__br"> в корзину</div>
+                <div class="modal__text">Выберите размер:</div>
+                <div class="modal__size">
+                    <input class="modal__radio" id="size-S" type="radio" name="size" value="S">
+                    <label class="modal__label" for="size-S">S</label>
+                    <input class="modal__radio" id="size-M" type="radio" name="size" value="M">
+                    <label class="modal__label" for="size-M">M</label>
+                    <input class="modal__radio" id="size-L" type="radio" name="size" value="L">
+                    <label class="modal__label" for="size-L">L</label>
+                </div>
+                <button class="modal__btn btn">Добавить</button>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script grity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>

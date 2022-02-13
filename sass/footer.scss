@@ -19,6 +19,51 @@
         align-items: center;
     }
 
+    &__inst {
+        width: 22px;
+        height: 21px;
+
+        background-image: url('/img/insta.png');
+
+        &:hover {
+            background-image: url('/img/insta-hover.png');
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+    
+    &__fb {
+        width: 15px;
+        height: 29px;
+
+        background-image: url('/img/fb.png');
+
+        &:hover {
+            background-image: url('/img/fb-hover.png');
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+    
+    &__twitter {
+        width: 24px;
+        height: 20px;
+        
+        background-image: url('/img/twitter.png');
+
+        &:hover {
+            background-image: url('/img/twitter-hover.png');
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
     &__author {
         height: 80px;
         box-sizing: border-box;
@@ -28,6 +73,14 @@
         align-items: center;
 
         border-top: 1px solid #e5e5e5;
+
+        &:hover .footer__copy-img{
+            background-image: url('/img/htmlacademy-hover.png');
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
     }
 
     &__text {
@@ -36,6 +89,13 @@
         font-weight: bold;
         
         margin-right: 30px;
+    }
+
+    &__copy-img {
+        width: 27px;
+        height: 34px;
+
+        background-image: url('/img/htmlacademy.png');
     }
 }
 
@@ -50,8 +110,19 @@
         }
 
         &__logo {
-            width: 184px;
             display: block;
+
+            width: 102px;
+            height: 35px;
+            background-image: url('/img/logo-footer.png');
+
+            &:hover {
+                background-image: url('/img/logo-footer-hover.png');
+            }
+
+            &:active {
+                opacity: 0.3;
+            }
         }
 
         &__author {

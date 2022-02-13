@@ -15,6 +15,14 @@
         justify-content: center;
         align-items: center;
 
+        &:hover {
+            color: $text-color-60;
+        }
+
+        &:active {
+            color: $text-color-30;
+        }
+
         & p {
             width: 190px;
             padding-left: 45px;
@@ -45,15 +53,30 @@
             background-image: url('/img/search.png');
         }
 
+        &--search:hover p::before {
+            background-image: url('/img/search-hover.png');
+        }
+        
+        &--search:active p::before {
+            background-image: url('/img/search-active.png');
+        }
+
         &--cart p::before {
             width: 21px;
             height: 18px;
             
             background-image: url('/img/cart.png');
         }
+
+        &--cart:hover p::before {
+            background-image: url('/img/cart-hover.png');
+        }
+        
+        &--cart:active p::before {
+            background-image: url('/img/cart-active.png');
+        }
     }
 }
-
 
 @media (min-width: $tablet-width) {
     .nav {

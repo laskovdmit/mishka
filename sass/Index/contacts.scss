@@ -32,6 +32,14 @@
     &__line {
         position: relative;
 
+        &:hover {
+            color: $second-color;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+
         &::after {
             content: "";
 

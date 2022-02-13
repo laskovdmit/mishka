@@ -20,9 +20,34 @@
 
         display: flex;
         flex-direction: column;
+        cursor: pointer;
 
         &:last-of-type {
             margin-bottom: 0;
+        }
+        
+        &:hover .products__descr{
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        &:active .products__descr{
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        &:hover .products__title{
+            color: $text-color-60;
+        }
+
+        &:active .products__title{
+            color: $text-color-30;
+        }
+        
+        &:hover .products__buy::after{
+            background-image: url('/img/cart-hover.png');
+        }
+
+        &:active .products__buy::after{
+            background-image: url('/img/cart-active.png');
         }
     }
     

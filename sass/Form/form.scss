@@ -81,33 +81,53 @@
         display: none;
     }
 
-    &__label--radio::before {
-        content: "";
-
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translate(0, -50%);
-
-        width: 38px;
-        height: 38px;
-        border: 2px solid #000000;
-        border-radius: 50%;
-        box-sizing: border-box;
+    &__label--radio {
+        &::before {
+            content: "";
+    
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+    
+            width: 38px;
+            height: 38px;
+            border: 2px solid #000000;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+        
+        &:hover::before {
+            border-color: $second-color;
+        }
+        
+        &:active::before {
+            border-color: $text-color-30;
+        }
     }
 
-    &__label--checkbox::before {
-        content: "";
+    &__label--checkbox {
+        &::before {
+            content: "";
+    
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+    
+            width: 40px;
+            height: 40px;
+            border: 2px solid #000000;
+            box-sizing: border-box;
+        }
 
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translate(0, -50%);
-
-        width: 40px;
-        height: 40px;
-        border: 2px solid #000000;
-        box-sizing: border-box;
+        &:hover::before {
+            border-color: $second-color;
+        }
+        
+        &:active::before {
+            border-color: $text-color-30;
+        }
     }
 
     &__radio:checked + &__label--radio::after {
@@ -186,6 +206,14 @@
             background-repeat: no-repeat;
         }
     }
+    
+    &__inputwrap--phone:hover::after, &__inputwrap--phone:active::after{
+        background-image: url('/img/phone-hover.png');
+    }
+    
+    &__inputwrap--email:hover::after, &__inputwrap--email:active::after{
+        background-image: url('/img/mail-hover.png');
+    }
 
     &__input {
         height: 50px;
@@ -197,6 +225,7 @@
 
         font-size: 17px;
         line-height: 18px;
+        color: $text-color;
 
         &--contacts {
             width: 100%;
@@ -205,6 +234,10 @@
 
         &::placeholder {
             color: rgba(68, 68, 68, 0.3);
+        }
+
+        &:hover, &:active {
+            border-color: $second-color;
         }
     }
 
@@ -222,6 +255,11 @@
 
         &::placeholder {
             color: rgba(68, 68, 68, 0.3);
+        }
+
+        &:hover {
+            border-color: $second-color;
+            color: $text-color;
         }
     }
 

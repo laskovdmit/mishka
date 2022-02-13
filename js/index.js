@@ -10,3 +10,17 @@ $(window).on('resize', function() {
         $('.menu').addClass('menu--closed');
     }
 });
+
+$('.production__btn').on('click', function() {
+    $('.modal').removeClass('modal--hide');
+});
+
+$('.product__btn').on('click', function() {
+    $('.modal').removeClass('modal--hide');
+});
+
+$('.modal').on('click', function(e) {
+    if (e.target == this) {
+        $('.modal').addClass('modal--hide');
+    }
+});

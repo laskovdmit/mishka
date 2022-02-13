@@ -2,15 +2,16 @@
     background-color: $bg-color;
     
     position: relative;
-    z-index: -2;
+
+    margin-bottom: 216px;
 
     &__wrapper {
+
         min-height: 285px;
         position: relative;
     }
 
     &__img {
-        z-index: -1;
         position: absolute;
         top: -15px;
         left: 50%;
@@ -46,8 +47,10 @@
         line-height: 24px;
         font-weight: bold;
         
+        height: 48px;
         padding: 30px;
         position: relative;
+        cursor: pointer;
     }
 
     &__interior {
@@ -64,6 +67,14 @@
             height: 62px;
 
             background-image: url('/img/interior.png');
+        }
+
+        &:active {
+            color: rgba(255, 255, 255, 0.3);
+
+            &::after {
+                opacity: 0.3;
+            }
         }
     }
 
@@ -82,11 +93,21 @@
 
             background-image: url('/img/toy.png');
         }
+
+        &:active {
+            color: rgba(255, 255, 255, 0.3);
+
+            &::after {
+                opacity: 0.3;
+            }
+        }
     }
 }
 
 @media (min-width: $tablet-width) {
     .promo {
+        margin-bottom: 0;
+
         &__wrapper {
             min-height: 746px;
             overflow: hidden;
@@ -108,6 +129,7 @@
             max-width: 668px;
 
             flex-direction: row;
+            align-items: flex-end;
 
             top: auto;
             bottom: 0;
@@ -120,6 +142,10 @@
 
             font-size: 20px;
             line-height: 30px;
+        }
+
+        &__interior:hover, &__toys:hover {
+            padding-bottom: 35px;
         }
     }
 }
