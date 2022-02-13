@@ -74,11 +74,11 @@
     }
 
     &__prev::after {
-        background-image: url('/img/huge-arrow-left.png');
+        background-image: url('../img/huge-arrow-left.png');
     }
 
     &__next::after {
-        background-image: url('/img/huge-arrow-right.png');
+        background-image: url('../img/huge-arrow-right.png');
     }
 
     &__prev:hover::after, &__next:hover::after {

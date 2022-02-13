@@ -156,7 +156,7 @@
         width: 22px;
         height: 16px;
 
-        background-image: url('/img/tick.png');
+        background-image: url('../img/tick.png');
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -187,7 +187,7 @@
             width: 25px;
             height: 24px;
     
-            background-image: url('/img/phone.png');
+            background-image: url('../img/phone.png');
             background-repeat: no-repeat;
         }
 
@@ -202,17 +202,17 @@
             width: 32px;
             height: 21px;
     
-            background-image: url('/img/mail.png');
+            background-image: url('../img/mail.png');
             background-repeat: no-repeat;
         }
     }
     
     &__inputwrap--phone:hover::after, &__inputwrap--phone:active::after{
-        background-image: url('/img/phone-hover.png');
+        background-image: url('../img/phone-hover.png');
     }
     
     &__inputwrap--email:hover::after, &__inputwrap--email:active::after{
-        background-image: url('/img/mail-hover.png');
+        background-image: url('../img/mail-hover.png');
     }
 
     &__input {

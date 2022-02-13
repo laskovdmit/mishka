@@ -100,7 +100,7 @@ ul {
         left: 50%;
         transform: translate(-50%, 50%);
     
-        background-image: url('/img/zigzag-line-desktop.png');
+        background-image: url('../img/zigzag-line-desktop.png');
         background-size: contain;
     }
 }
@@ -135,7 +135,7 @@ ul {
         bottom: 0;
         transform: translate(0, 50%);
     
-        background-image: url('/img/zigzag-fill-desktop.png');
+        background-image: url('../img/zigzag-fill-desktop.png');
         background-repeat: repeat-x;
         background-position: bottom;
         background-size: contain;

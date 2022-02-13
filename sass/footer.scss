@@ -23,10 +23,10 @@
         width: 22px;
         height: 21px;
 
-        background-image: url('/img/insta.png');
+        background-image: url('../img/insta.png');
 
         &:hover {
-            background-image: url('/img/insta-hover.png');
+            background-image: url('../img/insta-hover.png');
         }
 
         &:active {
@@ -38,10 +38,10 @@
         width: 15px;
         height: 29px;
 
-        background-image: url('/img/fb.png');
+        background-image: url('../img/fb.png');
 
         &:hover {
-            background-image: url('/img/fb-hover.png');
+            background-image: url('../img/fb-hover.png');
         }
 
         &:active {
@@ -53,10 +53,10 @@
         width: 24px;
         height: 20px;
         
-        background-image: url('/img/twitter.png');
+        background-image: url('../img/twitter.png');
 
         &:hover {
-            background-image: url('/img/twitter-hover.png');
+            background-image: url('../img/twitter-hover.png');
         }
 
         &:active {
@@ -75,7 +75,7 @@
         border-top: 1px solid #e5e5e5;
 
         &:hover .footer__copy-img{
-            background-image: url('/img/htmlacademy-hover.png');
+            background-image: url('../img/htmlacademy-hover.png');
         }
 
         &:active {
@@ -95,7 +95,7 @@
         width: 27px;
         height: 34px;
 
-        background-image: url('/img/htmlacademy.png');
+        background-image: url('../img/htmlacademy.png');
     }
 }
 
@@ -114,10 +114,10 @@
 
             width: 102px;
             height: 35px;
-            background-image: url('/img/logo-footer.png');
+            background-image: url('../img/logo-footer.png');
 
             &:hover {
-                background-image: url('/img/logo-footer-hover.png');
+                background-image: url('../img/logo-footer-hover.png');
             }
 
             &:active {

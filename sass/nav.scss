@@ -50,30 +50,30 @@
             width: 18px;
             height: 18px;
 
-            background-image: url('/img/search.png');
+            background-image: url('../img/search.png');
         }
 
         &--search:hover p::before {
-            background-image: url('/img/search-hover.png');
+            background-image: url('../img/search-hover.png');
         }
         
         &--search:active p::before {
-            background-image: url('/img/search-active.png');
+            background-image: url('../img/search-active.png');
         }
 
         &--cart p::before {
             width: 21px;
             height: 18px;
             
-            background-image: url('/img/cart.png');
+            background-image: url('../img/cart.png');
         }
 
         &--cart:hover p::before {
-            background-image: url('/img/cart-hover.png');
+            background-image: url('../img/cart-hover.png');
         }
         
         &--cart:active p::before {
-            background-image: url('/img/cart-active.png');
+            background-image: url('../img/cart-active.png');
         }
     }
 }

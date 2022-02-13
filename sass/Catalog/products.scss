@@ -43,11 +43,11 @@
         }
         
         &:hover .products__buy::after{
-            background-image: url('/img/cart-hover.png');
+            background-image: url('../img/cart-hover.png');
         }
 
         &:active .products__buy::after{
-            background-image: url('/img/cart-active.png');
+            background-image: url('../img/cart-active.png');
         }
     }
     
@@ -95,7 +95,7 @@
             width: 21px;
             height: 18px;
 
-            background-image: url('/img/cart.png');
+            background-image: url('../img/cart.png');
         }
     }
 }
